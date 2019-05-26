@@ -1,0 +1,9 @@
+To use images in your page we will use random images.
+
+This is the site: https://picsum.photos/ and it explains how to build the URL
+
+To use a photo use an image use this format (where id will be the id of the user):
+
+https://picsum.photos/id/1/100/100
+
+Note that the pictures will not necessarily be pictures of people.
