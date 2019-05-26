@@ -12,11 +12,13 @@ class Meeting extends Model
      * @var array
      */
     protected $fillable = [
-            'title', 'details', 'location', 'start_date', 'end_date'
+            'title', 'details', 'location', 'start_date', 'end_date',
     ];
     
     public function users()
     {
-        return $this->belongsToMany('\App\User', 'attendees');
+        return $this->belongsToMany('\App\User', 'attendees')
+                    ->as('attendance')
+                    ->withPivot('attending');
     }
 }
